@@ -8,6 +8,8 @@
   iframe.height = h;
   iframe.frameBorder = '0';
 
-  document.body.appendChild (iframe)
+  document.body.appendChild(iframe);
+  console.log("succeed to add Iframe");
+  return 1;
 }
 
