@@ -13,6 +13,7 @@
     src = "https://" + src;
   }
   iframe.src = src;
+  iframe.allowfullscreen = true;
   document.body.appendChild(iframe);
   console.log("succeed to add Iframe");
   return 1;
