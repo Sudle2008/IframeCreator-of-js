@@ -1,6 +1,5 @@
 ﻿function CreateIframe (src,fd,h){
   var iframe = document.createElement ('iframe');
-  iframe.src = src;
   iframe.width ='100%';
   if (h === undefined){
     h = window.innerHeight || document.ducumentElement.clientHeight;
@@ -13,6 +12,7 @@
   if (!src.includes("//")){
     src = "https://" + src;
   }
+  iframe.src = src;
   document.body.appendChild(iframe);
   console.log("succeed to add Iframe");
   return 1;
